@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>basic</title>
+      <link>/post/2018/basic/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/basic/</guid>
+      <description>Resource  Slide: https://docs.google.com/presentation/d/e/2PACX-1vRjb_W1Vo9-zD9F4FmWOiB6K4ezkF6W64OKcX7bZD6ordKvOT-6LFoGi0le-HzT2ABKudDNhr_qKt2x/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.g2074c710b4_0_293 2017/09/24 Updated   自R-CRAN安裝套件  當使用install.packages(&amp;quot;package_name&amp;quot;)時，就會自R-cran搜尋是否有該套件，有的話就會將該套件安裝到你的電腦中。(The package will be downloaded and installed to your computer, BUT not yet loaded into your current environment.)例如：install.packages(&amp;quot;tidyverse&amp;quot;) 此時，雖然該套件已經安裝在你的電腦中，但並不代表你現在的程式可以使用它，你必須要使用library(package_name)將其匯入或引入目前的程式執行環境中。  library(jsonlite) library(httr)  Try to get data load(url(&amp;quot;http://varianceexplained.org/files/trump_tweets_df.rda&amp;quot;)) df &amp;lt;- trump_tweets_df fliter.df &amp;lt;- df[df$favoriteCount &amp;gt; mean(df$favoriteCount) +2*sd (df$favoriteCount),] # View(fliter.df) fliter.df2 &amp;lt;- df[df$retweetCount &amp;gt; mean(df$retweetCount) + 2* sd (df$retweetCount),] order.df &amp;lt;- df[order(df$favoriteCount, decreasing = TRUE),] # View(order.df[1:10,])  plotting hist(df$favoriteCount, breaks = 1000) df$nchar &amp;lt;-nchar (df$text) hist(df$nchar, breaks= 1000) # View(order.</description>
+    </item>
+    
+    <item>
+      <title>Install packages</title>
+      <link>/post/2018/install-packages/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/install-packages/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
